@@ -21,7 +21,7 @@ export const getFilteredTrips = ({trips, filters}) => {
 };
 
 export const getTripById = ({trips}, tripId) => {
-  const filtered = trips;
+  const filtered = trips.filter(trip => trip.id === tripId);
 
   // TODO - filter trips by tripId
 
@@ -30,7 +30,7 @@ export const getTripById = ({trips}, tripId) => {
 };
 
 export const getTripsForCountry = ({trips}, countryCode) => {
-  const filtered = trips;
+  const filtered = trips.filter(trip => trip.country.code == countryCode);
 
   // TODO - filter trips by countryCode
 
@@ -38,24 +38,4 @@ export const getTripsForCountry = ({trips}, countryCode) => {
   return filtered.length ? filtered : [{error: true}];
 };
 
-/* ACTIONS */
-
-/*
-// action name creator
-const reducerName = 'trips';
-const createActionName = name => `app/${reducerName}/${name}`;
-
-// action types
-
-
-// action creators
-
-
-// reducer
-export default function reducer(statePart = [], action = {}) {
-  switch (action.type) {
-    default:
-      return statePart;
-  }
-}
- */
+ 
