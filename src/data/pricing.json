@@ -53,6 +53,7 @@
       "min": 0,
       "max": 6
     }
+<<<<<<< HEAD
   },
   {
     "id": "name",
@@ -68,5 +69,7 @@
     "id": "start-date",
     "name": "Preferred trip start",
     "type": "date"
+=======
+>>>>>>> 32a30e86c48e8c11cb35d5863ee8da06e7c688c3
   }
 ]

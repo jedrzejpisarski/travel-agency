@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import HTMLParser from "react-html-parser";
 
+<<<<<<< HEAD
 import NotFound from "../NotFound/NotFound";
 import Section from "../../layout/Section/Section";
 import PageTitle from "../../common/PageTitle/PageTitle";
@@ -14,6 +15,19 @@ import OrderForm from "../../features/OrderForm/OrderFormContainer";
 
 import styles from "./Trip.scss";
 import { Grid, Row, Col } from "react-flexbox-grid";
+=======
+import NotFound from '../NotFound/NotFound';
+import Section from '../../layout/Section/Section';
+import PageTitle from '../../common/PageTitle/PageTitle';
+import SideImage from '../../common/SideImage/SideImage';
+import DetailsBox from '../../common/DetailsBox/DetailsBox';
+import DetailsImage from '../../common/DetailsImage/DetailsImage';
+import List from '../../common/List/List';
+import ListItem from '../../common/ListItem/ListItem';
+import OrderForm from '../../features/OrderForm/OrderForm';
+import styles from './Trip.scss';
+import {Grid, Row, Col} from 'react-flexbox-grid';
+>>>>>>> 32a30e86c48e8c11cb35d5863ee8da06e7c688c3
 
 const Trip = ({
   error,
@@ -100,8 +114,15 @@ const Trip = ({
             </Col>
           </Row>
         </Grid>
+<<<<<<< HEAD
       </Section>
     );
+=======
+      </DetailsBox>
+      <OrderForm/>
+    </Section>
+  );
+>>>>>>> 32a30e86c48e8c11cb35d5863ee8da06e7c688c3
 };
 
 Trip.propTypes = {
