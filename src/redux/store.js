@@ -1,23 +1,15 @@
-<<<<<<< HEAD
 import { combineReducers, createStore } from "redux";
 import tripList from "../data/trips.json";
 
 import orderReducer from "./orderRedux";
 import globalReducer from "./globalRedux";
 import filtersReducer from "./filtersRedux";
-=======
-import {combineReducers, createStore} from 'redux';
-import tripList from '../data/trips.json';
-import orderReducer from './orderRedux';
-import globalReducer from './globalRedux';
-import filtersReducer from './filtersRedux';
->>>>>>> 32a30e86c48e8c11cb35d5863ee8da06e7c688c3
 
 // define initial state and shallow-merge initial data
 const initialState = {
   order: {
     trip: null,
-    email: '',
+    email: "",
     options: {},
   },
   trips: tripList,
